@@ -1,3 +1,2 @@
-src/main/resources/static/* linguist-vendored
 *.rb linguist-language=Java
-*.rb linguist-language=Java Spring  Boot
+src/main/resources/static/* linguist-vendored

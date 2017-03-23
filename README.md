@@ -1,4 +1,4 @@
-# README for the H2 File-based Dataabase Example
+# An H2 File-based Database Example in Spring Boot
 
 This Spring Boot example shows how a local file-based database can be embedded in a project. The database is H2 and using the parameters set in the application.properties file, you can instantiate a database that will exist in memory, or be written to any accessible file system. In this example, the database files are written to the project's folder as a file in a "data" folder. The location is also determined by settings in the application properties folder.
 
@@ -109,5 +109,14 @@ $ curl -v http://localhost:9000/getUser/2
 On success, a POST of the JSON object will return the new record with its generated ID.
 
 ```
+
 $ curl -H "Content-Type: application/json" -X POST -d '{"username":"pebbles","firstName":"Pebbles","lastName":"Flintstone","email":"pflintstone@example.com"}'  http://localhost:9000/saveUser
 {"id":8,"username":"pebbles","firstName":"Pebbles","lastName":"Flintstone","email":"pflintstone@example.com"}
+
+```
+
+## Using the H2 Console
+
+To access the console for the database, point your browser to "http://localhost:9000/console" and you should see a small login panel. The default username is "sa" and there is no password. Once in there are some useful tools for perfoming some basic tasks.
+
+# End of File
