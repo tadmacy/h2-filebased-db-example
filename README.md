@@ -22,27 +22,6 @@ Using the following calls in an application such as Postman or curl, you may que
 ### Sanity Check
 
 ```
-curl -v http://localhost:9000/
-
-Returns:
-*   Trying 127.0.0.1...
-* Connected to localhost (127.0.0.1) port 9000 (#0)
-> GET / HTTP/1.1
-> Host: localhost:9000
-> User-Agent: curl/7.49.1
-> Accept: */*
->
-< HTTP/1.1 200
-< Content-Type: text/plain
-< Content-Length: 23
-< Date: Thu, 23 Mar 2017 19:53:23 GMT
-<
-* Connection #0 to host localhost left intact
-It's alive! It's alive!
-```
-### Get All Users
-
-```
 $ curl -v http://localhost:9000/
 *   Trying 127.0.0.1...
 * Connected to localhost (127.0.0.1) port 9000 (#0)
